@@ -13,4 +13,5 @@ importFrom(R.matlab, readMat)
 importFrom(pracma, pinv, fminunc)
 
 export(cnmf)
+export()
 S3method(cnmf, default)
