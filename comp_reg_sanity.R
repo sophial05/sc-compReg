@@ -3,6 +3,13 @@ library(R.matlab)
 library(Matrix)
 library(tictoc)
 
+sc_compreg('/Users/Sophia/Desktop/BioStats/compreg/PeakName_intersect.txt',
+           '/Users/Sophia/Desktop/BioStats/compreg/sample1.mat',
+           '/Users/Sophia/Desktop/BioStats/compreg/sample2.mat',
+           '/Users/Sophia/Desktop/BioStats/compreg/MotifMatch_human_rmdup.mat',
+           '/Users/Sophia/Desktop/BioStats/compreg/MotifTarget.txt',
+           '/Users/Sophia/Desktop/BioStats/compreg/peak_gene_prior_intersect.bed')
+
 pni = comp_reg_preprocess('/Users/Sophia/Desktop/BioStats/compreg/PeakName_intersect.txt', token='\t')
 s2 = readMat('/Users/Sophia/Desktop/BioStats/compreg/sample2.mat')
 s1 = readMat('/Users/Sophia/Desktop/BioStats/compreg/sample1.mat')
