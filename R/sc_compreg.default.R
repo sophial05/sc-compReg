@@ -12,7 +12,7 @@ sc_compreg.default <- function(peak.name.intersect.dir,
     pni.file <- comp_reg_preprocess(peak.name.intersect.dir, token=sep.char)
     s2 <- readMat(sample2.mat.dir)
     s1 <- readMat(sample1.mat.dir)
-    clust.profile.output <- cluster.profile(s1$O1,
+    clust.profile.output <- cluster_profile(s1$O1,
                                             s1$E1,
                                             s1$O1.idx,
                                             s1$E1.idx,
@@ -27,7 +27,7 @@ sc_compreg.default <- function(peak.name.intersect.dir,
                                             pni.file$vo,
                                             pni.file$vt)
 
-    subpop.link.output <- subpopulation.link(clust.profile.output$E1.mean,
+    subpop.link.output <- subpopulation_link(clust.profile.output$E1.mean,
                                              clust.profile.output$E2.mean,
                                              clust.profile.output$O1.mean,
                                              clust.profile.output$O2.mean)
