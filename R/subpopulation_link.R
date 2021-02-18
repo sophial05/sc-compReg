@@ -3,5 +3,5 @@ subpopulation.link <- function(E.mean.healthy,
                                O.mean.healthy,
                                O.mean.cll,
                             ...) {
-    UseMethod("subpopulation.link")
+    UseMethod("subpopulation_link")
 }
