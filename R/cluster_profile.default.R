@@ -150,11 +150,11 @@ cluster.profile.default <- function(O1,
     O2.mean = sweep(O2.mean, 2, Matrix::colMeans(O2.mean), '/')
 
     output <- list('E1.mean' = E1.mean,
-                  'E2.mean' = E2.mean,
-                  'symbol' = symbol,
-                  'O1.mean' = O1.mean,
-                  'O2.mean' = O2.mean,
-                  'elem.name' = elem.name)
+                   'E2.mean' = E2.mean,
+                   'symbol' = symbol,
+                   'O1.mean' = O1.mean,
+                   'O2.mean' = O2.mean,
+                   'elem.name' = elem.name)
     output$call <- this.call
 
     return(output)

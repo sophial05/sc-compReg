@@ -11,7 +11,7 @@ compreg.default <- function(symbol,
                             match.mat,
                             thresh,
                             sig.level,
-                            top.tf,
+                            num.top.tf,
                             d0.default) {
     if (is(symbol, 'list')) {
         symbol <- unlist(symbol, use.names=F)
@@ -23,7 +23,7 @@ compreg.default <- function(symbol,
 
     this.call <- match.call()
 
-    a <- threshK(tf.binding, top.tf)
+    a <- threshK(tf.binding, num.top.tf)
 
     tf.binding[tf.binding - a[, ncol(a)] < 0] <- 0
 

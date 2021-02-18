@@ -1,9 +1,5 @@
-mfbs.default <- function(TF.name,
-                         elem.name,
+mfbs.default <- function(elem.name,
                          motif.target.path,
-                         motif.name,
-                         motif.weight,
-                         match2,
                          motif.mat.path) {
 
     if (! is(motif.target.path, "character")) {
@@ -14,6 +10,8 @@ mfbs.default <- function(TF.name,
         stop('motif.mat.path must be character class. Please check your input.')
     }
 
+    this.call <- match.call()
+
     motif.mat <- readMat(motif.mat.path)
 
     motif.name <- unlist(motif.mat$motifName, use.names=F)
@@ -22,8 +20,6 @@ mfbs.default <- function(TF.name,
     m2.half.idx <- length(match2) / 2
     match2 <- list('a' = match2[1: m2.half.idx],
                    'b' = match2[(m2.half.idx + 1):length(match2)])
-
-    this.call <- match.call()
 
     motif.file <- mfbs.load(motif.target.path)
     f3 <- motif.file$C3

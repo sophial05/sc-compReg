@@ -1,9 +1,5 @@
-mfbs <- function(TF.name,
-                 elem.name,
+mfbs <- function(elem.name,
                  motif.target.path,
-                 motif.name,
-                 motif.weight,
-                 match2,
                  motif.mat.path,
                  ...) {
     UseMethod("mfbs.default")
