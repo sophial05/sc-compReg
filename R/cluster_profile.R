@@ -1,4 +1,4 @@
-cluster_profile <- function(O1,
+"cluster_profile" <- function(O1,
                             E1,
                             O1.idx,
                             E1.idx,
@@ -13,5 +13,5 @@ cluster_profile <- function(O1,
                             pk.name.intersect1,
                             pk.name.intersect2,
                             ...) {
-    UseMethod("cluster_profile.default")
+    UseMethod("cluster_profile")
 }

@@ -1,4 +1,4 @@
-compreg <- function(symbol,
+"compreg" <- function(symbol,
                     tf.binding,
                     elem.name,
                     peak.gene.prior.path,
@@ -14,5 +14,5 @@ compreg <- function(symbol,
                     num.top.tf,
                     d0.default,
                     ...) {
-    UseMethod("compreg.default")
+    UseMethod("compreg")
 }

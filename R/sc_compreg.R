@@ -1,4 +1,4 @@
-sc_compreg <- function(peak.name.intersect.dir,
+"sc_compreg" <- function(peak.name.intersect.dir,
                        sample1.mat.dir,
                        sample2.mat.dir,
                        motif.mat.dir,
@@ -10,5 +10,5 @@ sc_compreg <- function(peak.name.intersect.dir,
                        num.top.tf = 5000,
                        d0.default = 500000,
                        ...) {
-    UseMethod("sc_compreg.default")
+    UseMethod("sc_compreg")
 }
