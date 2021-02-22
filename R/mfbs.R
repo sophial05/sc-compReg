@@ -1,6 +1,9 @@
 "mfbs" <- function(elem.name,
-                 motif.target.path,
-                 motif.mat.path,
-                 ...) {
+                   symbol,
+                   motif.name,
+                   motif.weight,
+                   match2,
+                   motif.file,
+                   ...) {
     UseMethod("mfbs")
 }
